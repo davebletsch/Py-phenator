@@ -1,0 +1,13 @@
+# pyphenate - simply highlight and COPY selected text to the clipboard,
+# and this program will replace all spaces with a hyphen.
+
+import pyperclip
+
+# Assign a variable name to clipboard contents
+text = pyperclip.paste()
+
+# Replace spaces with hyphens
+h_text = text.replace(' ', '-')
+
+# Return transformed string to the clipboard
+pyperclip.copy(h_text)
